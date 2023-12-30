@@ -17,8 +17,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ceco.r.gravitybox"
-    android:versionCode="1105"
-    android:versionName="11.0.5" >
+    android:versionCode="11051"
+    android:versionName="11.0.5.1" >
 
     <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
@@ -35,10 +35,13 @@
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <permission
+    <!---permission
         android:name="gravitybox.permission.UNLOCK"
         android:label="Permission to unlock GravityBox premium features"
-        android:protectionLevel="signature" />
+        android:protectionLevel="signature" /-->
+    <permission
+        android:name="gravitybox.permission.UNLOCK"
+        android:label="Permission to unlock GravityBox prenium features" />
     <uses-permission android:name="gravitybox.permission.UNLOCK" />
 
     <application
