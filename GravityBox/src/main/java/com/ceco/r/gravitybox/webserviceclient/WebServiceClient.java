@@ -62,7 +62,7 @@ public class WebServiceClient<T extends WebServiceResult> extends AsyncTask<Requ
     public WebServiceClient(Context context, WebServiceTaskListener<T> listener) {
         mContext = context;
         mListener = listener;
-        if (mContext == null || mListener == null) { 
+        if (mContext == null || mListener == null) {
             throw new IllegalArgumentException();
         }
 
@@ -85,44 +85,8 @@ public class WebServiceClient<T extends WebServiceResult> extends AsyncTask<Requ
     protected T doInBackground(RequestParams... params) {
         T result = mListener.obtainWebServiceResultInstance();
         result.setAction(params[0].getAction());
-        HttpURLConnection con = null;
-
-        if (mHash == null) {
-            result.setStatus(WebServiceResult.ResultStatus.ERROR);
-            result.setMessage(mContext.getString(R.string.wsc_hash_creation_failed));
-            return result;
-        }
-
-        params[0].addParam("hash", mHash);
-        if (Build.DEVICE != null) {
-            params[0].addParam("serial", Build.DEVICE);
-        }
-
-        try {
-            URL url = new URL(params[0].getUrl());
-            con = (HttpURLConnection) url.openConnection();
-            con.setConnectTimeout(CONNECTION_TIMEOUT);
-            con.setReadTimeout(SOCKET_TIMEOUT);
-            con.setRequestMethod("POST");
-            con.setDoInput(true);
-            con.setDoOutput(true);
-
-            stringToStream(params[0].getEncodedQuery(), con.getOutputStream());
-            if (con.getResponseCode() == HttpURLConnection.HTTP_OK) {
-                result.setData(new JSONObject(streamToString(con.getInputStream())));
-            } else {
-                result.setStatus(ResultStatus.ERROR);
-                result.setMessage(String.format(mContext.getString(R.string.wsc_error),
-                        con.getResponseMessage()));
-            }
-        } catch (Exception e) {
-            result.setStatus(ResultStatus.ERROR);
-            result.setMessage(String.format(mContext.getString(R.string.wsc_error), e.getMessage()));
-            e.printStackTrace();
-        } finally {
-            if (con != null) con.disconnect();
-        }
-
+        result.setStatus(ResultStatus.ERROR);
+        result.setMessage("Network communication is disabled.");
         return result;
     }
 

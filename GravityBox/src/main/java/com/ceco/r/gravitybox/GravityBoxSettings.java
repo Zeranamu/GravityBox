@@ -141,7 +141,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
             "gravitybox.intent.action.BATTERY_SOUND_CHANGED";
     public static final String EXTRA_BATTERY_SOUND_TYPE = "batterySoundType";
     public static final String EXTRA_BATTERY_SOUND_URI = "batterySoundUri";
-    public static final String ACTION_PREF_LOW_BATTERY_WARNING_POLICY_CHANGED = 
+    public static final String ACTION_PREF_LOW_BATTERY_WARNING_POLICY_CHANGED =
             "gravitybox.intent.action.LOW_BATTERY_WARNING_POLICY_CHANGED";
     public static final String EXTRA_LOW_BATTERY_WARNING_POLICY = "lowBatteryWarningPolicy";
 
@@ -596,7 +596,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
     public static final String EXTRA_SIM_SLOT = "simSlot";
 
     public static final String PREF_KEY_ONGOING_NOTIFICATIONS = "pref_ongoing_notifications";
-    public static final String ACTION_PREF_ONGOING_NOTIFICATIONS_CHANGED = 
+    public static final String ACTION_PREF_ONGOING_NOTIFICATIONS_CHANGED =
             "gravitybox.intent.action.ONGOING_NOTIFICATIONS_CHANGED";
     public static final String EXTRA_ONGOING_NOTIF = "ongoingNotif";
     public static final String EXTRA_ONGOING_NOTIF_RESET = "ongoingNotifReset";
@@ -617,7 +617,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
     public static final String PREF_KEY_DATA_TRAFFIC_OMNI_SHOW_ICON = "pref_data_traffic_omni_show_icon";
     public static final String PREF_KEY_DATA_TRAFFIC_OMNI_AUTOHIDE = "pref_data_traffic_omni_autohide";
     public static final String PREF_KEY_DATA_TRAFFIC_OMNI_AUTOHIDE_TH = "pref_data_traffic_omni_autohide_threshold";
-    public static final String ACTION_PREF_DATA_TRAFFIC_CHANGED = 
+    public static final String ACTION_PREF_DATA_TRAFFIC_CHANGED =
             "gravitybox.intent.action.DATA_TRAFFIC_CHANGED";
     public static final String EXTRA_DT_MODE = "dtMode";
     public static final String EXTRA_DT_ACTIVE_MOBILE_ONLY = "dtActiveMobileOnly";
@@ -673,7 +673,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
     private static final String PREF_KEY_SETTINGS_BACKUP = "pref_settings_backup";
     private static final String PREF_KEY_SETTINGS_RESTORE = "pref_settings_restore";
 
-    private static final String PREF_KEY_TRANS_VERIFICATION = "pref_trans_verification"; 
+    private static final String PREF_KEY_TRANS_VERIFICATION = "pref_trans_verification";
 
     private static final String PREF_LED_CONTROL = "pref_led_control";
 
@@ -689,7 +689,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
     public static final String PREF_KEY_STATUSBAR_BT_VISIBILITY = "pref_sb_bt_visibility";
     public static final String PREF_KEY_STATUSBAR_HIDE_VIBRATE_ICON = "pref_sb_hide_vibrate_icon";
     public static final String PREF_KEY_STATUSBAR_HIDE_DATA_SAVER_ICON = "pref_sb_hide_data_saver_icon";
-    public static final String ACTION_PREF_SYSTEM_ICON_CHANGED = 
+    public static final String ACTION_PREF_SYSTEM_ICON_CHANGED =
             "gravitybox.intent.action.SYSTEM_ICON_CHANGED";
     public static final String EXTRA_SB_BT_VISIBILITY = "sbBtVisibility";
     public static final String EXTRA_SB_HIDE_VIBRATE_ICON = "sbHideVibrateIcon";
@@ -1183,7 +1183,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
         mAlertDialog = null;
     }
 
-    public static class PrefsFragment extends PreferenceFragment 
+    public static class PrefsFragment extends PreferenceFragment
                                       implements OnSharedPreferenceChangeListener,
                                                  OnPreferenceChangeListener {
         private ListPreference mBatteryStyle;
@@ -1341,7 +1341,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 System.exit(0);
                 return;
             }
-            
+
             mPrefs = SettingsManager.getInstance(getActivity()).getMainPrefs();
             getPreferenceManager().setStorageDeviceProtected();
             addPreferencesFromResource(R.xml.gravitybox);
@@ -1383,10 +1383,10 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 getPreferenceScreen().removePreference(mPrefEngMode);
             }
 
-            mPrefCatLockscreenBg = 
+            mPrefCatLockscreenBg =
                     (PreferenceCategory) findPreference(PREF_CAT_KEY_LOCKSCREEN_BACKGROUND);
             mPrefLockscreenBg = (ListPreference) findPreference(PREF_KEY_LOCKSCREEN_BACKGROUND);
-            mPrefLockscreenBgColor = 
+            mPrefLockscreenBgColor =
                     (ColorPickerPreference) findPreference(PREF_KEY_LOCKSCREEN_BACKGROUND_COLOR);
             mPrefLockscreenBgImage =
                     findPreference(PREF_KEY_LOCKSCREEN_BACKGROUND_IMAGE);
@@ -1394,7 +1394,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                     (CheckBoxPreference) findPreference(PREF_KEY_LOCKSCREEN_BACKGROUND_BLUR_EFFECT);
             mPrefLockscreenBlurIntensity =
                     (SeekBarPreference) findPreference(PREF_KEY_LOCKSCREEN_BACKGROUND_BLUR_INTENSITY);
-            mPrefLockscreenCarrierText = 
+            mPrefLockscreenCarrierText =
                     (EditTextPreference) findPreference(PREF_KEY_LOCKSCREEN_CARRIER_TEXT);
 
             wallpaperImage = new File(SettingsManager.getInstance(getActivity()).getPreferenceDir() + "/lockwallpaper");
@@ -1572,7 +1572,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
             getPreferenceScreen().removePreference(mPrefCustomApp);
 
             mPrefChargingLed = (ListPreference) findPreference(PREF_KEY_CHARGING_LED);
-            mPrefProximityWakeIgnoreCall = (CheckBoxPreference) findPreference(PREF_KEY_POWER_PROXIMITY_WAKE_IGNORE_CALL); 
+            mPrefProximityWakeIgnoreCall = (CheckBoxPreference) findPreference(PREF_KEY_POWER_PROXIMITY_WAKE_IGNORE_CALL);
 
             //mPrefQrQuality = (ListPreference) findPreference(PREF_KEY_QUICKRECORD_QUALITY);
 
@@ -1584,13 +1584,13 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
 
             //mPrefCatCellTile = (PreferenceScreen) findPreference(PREF_CAT_KEY_CELL_TILE);
 
-            mPrefBatteryTileTempUnit = (ListPreference) findPreference(PREF_KEY_BATTERY_TILE_TEMP_UNIT); 
+            mPrefBatteryTileTempUnit = (ListPreference) findPreference(PREF_KEY_BATTERY_TILE_TEMP_UNIT);
 
             mPrefPowerCameraVp = (EditTextPreference) findPreference(PREF_KEY_POWER_CAMERA_VP);
 
             mPrefTuner = findPreference(PREF_TUNER);
 
-            // Filter preferences according to feature availability 
+            // Filter preferences according to feature availability
             if (!Utils.hasFlash(getActivity())) {
                 mPrefCatHwKeyOthers.removePreference(mPrefHwKeyLockscreenTorch);
                 mPrefCatMiscOther.removePreference(mPrefTorchAutoOff);
@@ -1819,7 +1819,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                     p.getTitle().toString()).toLowerCase(Locale.getDefault());
                 String summary = (p.getSummary() == null ? "" :
                     p.getSummary().toString()).toLowerCase(Locale.getDefault());
-                if ((p.isEnabled() || (p instanceof PreferenceCategory)) && 
+                if ((p.isEnabled() || (p instanceof PreferenceCategory)) &&
                         (title.contains(mSearchQuery) || summary.contains(mSearchQuery))) {
                     matchCount++;
                 } else if (p instanceof PreferenceGroup && p.getIntent() == null) {
@@ -2003,28 +2003,11 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 mPrefPulseNotificationDelay.setValue(delay);
             }
 
-            restrictFeatures();
-            if (sSystemProperties.uuidRegistered) {
-                if ("PayPal".equals(sSystemProperties.uuidType)) {
-                    unrestrictFeatures();
-                } else {
-                    UnlockActivity.checkPolicyOk(getContext(), ok -> {
-                        if (ok) {
-                            unrestrictFeatures();
-                            mPrefs.edit().putInt("policy_counter", 0).commit();
-                        } else {
-                            int cnt = mPrefs.getInt("policy_counter", 0) + 1;
-                            if (cnt > 3) {
-                                SettingsManager.getInstance(getContext()).resetUuid();
-                            } else {
-                                mPrefs.edit().putInt("policy_counter", cnt).commit();
-                                unrestrictFeatures();
-                            }
-                        }
-                    });
-                }
+            String transId = mPrefs.getString(PREF_KEY_TRANS_VERIFICATION, null);
+            if (transId != null && !transId.trim().isEmpty()) {
+                unrestrictFeatures();
             } else {
-                UnlockActivity.maybeRunUnlocker(getContext());
+                restrictFeatures();
             }
 
             WebServiceClient.getAppSignatureHash(getActivity());
@@ -2035,25 +2018,14 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
             mPrefBackup.setSummary(R.string.wsc_trans_required_summary);
             mPrefRestore.setEnabled(false);
             mPrefRestore.setSummary(R.string.wsc_trans_required_summary);
-            if (sSystemProperties.uncTrialCountdown == 0) {
-                mPrefLedControl.setEnabled(false);
-                mPrefLedControl.setSummary(String.format("%s (%s)", mPrefLedControl.getSummary(),
+            mPrefLedControl.setEnabled(false);
+            mPrefLedControl.setSummary(String.format("%s (%s)", mPrefLedControl.getSummary(),
+                getString(R.string.wsc_trans_required_summary)));
+            LedSettings.lockUnc(getActivity(), true);
+            mPrefTuner.setEnabled(false);
+            mPrefTuner.setSummary(String.format("%s (%s)", mPrefTuner.getSummary(),
                     getString(R.string.wsc_trans_required_summary)));
-                LedSettings.lockUnc(getActivity(), true);
-            } else {
-                LedSettings.lockUnc(getActivity(), false);
-            }
-            if (sSystemProperties.tunerTrialCountdown == 0) {
-                mPrefTuner.setEnabled(false);
-                mPrefTuner.setSummary(String.format("%s (%s)", mPrefTuner.getSummary(),
-                        getString(R.string.wsc_trans_required_summary)));
-                TunerMainActivity.lockTuner(getActivity(), true);
-            } else {
-                TunerMainActivity.lockTuner(getActivity(), false);
-            }
-            mPrefs.edit().putString(PREF_KEY_TRANS_VERIFICATION, null).commit();
-            mPrefTransVerification.setText(null);
-            mPrefTransVerification.getEditText().setText(null);
+            TunerMainActivity.lockTuner(getActivity(), true);
             mDonateUrlResId = R.string.url_donate_fixed_amount;
         }
 
@@ -2123,7 +2095,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
             }
 
             if (key == null || key.equals(PREF_KEY_PIE_CONTROL_ENABLE)) {
-                final int pieMode = 
+                final int pieMode =
                         Integer.valueOf(mPrefs.getString(PREF_KEY_PIE_CONTROL_ENABLE, "0"));
                 if (pieMode == 0) {
                     if (mPrefPieHwKeysDisabled.isChecked()) {
@@ -2466,7 +2438,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
 
         @Override
         public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
-            if (customAppKeys.contains(key)) { 
+            if (customAppKeys.contains(key)) {
                 if (Integer.valueOf(prefs.getString(key, "0")) == HWKEY_ACTION_CUSTOM_APP) {
                     Intent intent = new Intent(ACTION_PREF_HWKEY_CHANGED);
                     intent.putExtra(EXTRA_HWKEY_KEY, key);
@@ -2568,7 +2540,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                         prefs.getString(PREF_KEY_STATUSBAR_CLOCK_DOW, "0")));
             } else if (key.equals(PREF_KEY_STATUSBAR_CLOCK_DOW_SIZE)) {
                 intent.setAction(ACTION_PREF_CLOCK_CHANGED);
-                intent.putExtra(EXTRA_CLOCK_DOW_SIZE, 
+                intent.putExtra(EXTRA_CLOCK_DOW_SIZE,
                         prefs.getInt(PREF_KEY_STATUSBAR_CLOCK_DOW_SIZE, 70));
             } else if (key.equals(PREF_KEY_STATUSBAR_CLOCK_DATE)) {
                 intent.setAction(ACTION_PREF_CLOCK_CHANGED);
@@ -2703,7 +2675,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 }
             } else if (key.equals(PREF_KEY_PIE_CONTROL_CUSTOM_KEY)) {
                 intent.setAction(ACTION_PREF_PIE_CHANGED);
-                intent.putExtra(EXTRA_PIE_CUSTOM_KEY_MODE, Integer.valueOf( 
+                intent.putExtra(EXTRA_PIE_CUSTOM_KEY_MODE, Integer.valueOf(
                         prefs.getString(PREF_KEY_PIE_CONTROL_CUSTOM_KEY, "0")));
             } else if (key.equals(PREF_KEY_PIE_CONTROL_MENU)) {
                 intent.setAction(ACTION_PREF_PIE_CHANGED);
@@ -2715,7 +2687,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 intent.putExtra(EXTRA_PIE_TRIGGERS, triggers);
             } else if (key.equals(PREF_KEY_PIE_CONTROL_TRIGGER_SIZE)) {
                 intent.setAction(ACTION_PREF_PIE_CHANGED);
-                intent.putExtra(EXTRA_PIE_TRIGGER_SIZE, 
+                intent.putExtra(EXTRA_PIE_TRIGGER_SIZE,
                         prefs.getInt(PREF_KEY_PIE_CONTROL_TRIGGER_SIZE, 5));
             } else if (key.equals(PREF_KEY_PIE_CONTROL_SIZE)) {
                 intent.setAction(ACTION_PREF_PIE_CHANGED);
@@ -2725,23 +2697,23 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 intent.putExtra(EXTRA_PIE_HWKEYS_DISABLE, prefs.getBoolean(PREF_KEY_HWKEYS_DISABLE, false));
             } else if (key.equals(PREF_KEY_PIE_COLOR_BG)) {
                 intent.setAction(ACTION_PREF_PIE_CHANGED);
-                intent.putExtra(EXTRA_PIE_COLOR_BG, prefs.getInt(PREF_KEY_PIE_COLOR_BG, 
+                intent.putExtra(EXTRA_PIE_COLOR_BG, prefs.getInt(PREF_KEY_PIE_COLOR_BG,
                         getActivity().getColor(R.color.pie_background_color)));
             } else if (key.equals(PREF_KEY_PIE_COLOR_FG)) {
                 intent.setAction(ACTION_PREF_PIE_CHANGED);
-                intent.putExtra(EXTRA_PIE_COLOR_FG, prefs.getInt(PREF_KEY_PIE_COLOR_FG, 
+                intent.putExtra(EXTRA_PIE_COLOR_FG, prefs.getInt(PREF_KEY_PIE_COLOR_FG,
                         getActivity().getColor(R.color.pie_foreground_color)));
             } else if (key.equals(PREF_KEY_PIE_COLOR_OUTLINE)) {
                 intent.setAction(ACTION_PREF_PIE_CHANGED);
-                intent.putExtra(EXTRA_PIE_COLOR_OUTLINE, prefs.getInt(PREF_KEY_PIE_COLOR_OUTLINE, 
+                intent.putExtra(EXTRA_PIE_COLOR_OUTLINE, prefs.getInt(PREF_KEY_PIE_COLOR_OUTLINE,
                         getActivity().getColor(R.color.pie_outline_color)));
             } else if (key.equals(PREF_KEY_PIE_COLOR_SELECTED)) {
                 intent.setAction(ACTION_PREF_PIE_CHANGED);
-                intent.putExtra(EXTRA_PIE_COLOR_SELECTED, prefs.getInt(PREF_KEY_PIE_COLOR_SELECTED, 
+                intent.putExtra(EXTRA_PIE_COLOR_SELECTED, prefs.getInt(PREF_KEY_PIE_COLOR_SELECTED,
                         getActivity().getColor(R.color.pie_selected_color)));
             } else if (key.equals(PREF_KEY_PIE_COLOR_TEXT)) {
                 intent.setAction(ACTION_PREF_PIE_CHANGED);
-                intent.putExtra(EXTRA_PIE_COLOR_TEXT, prefs.getInt(PREF_KEY_PIE_COLOR_TEXT, 
+                intent.putExtra(EXTRA_PIE_COLOR_TEXT, prefs.getInt(PREF_KEY_PIE_COLOR_TEXT,
                         getActivity().getColor(R.color.pie_text_color)));
             } else if (key.equals(PREF_KEY_PIE_BACK_LONGPRESS)) {
                 intent.setAction(ACTION_PREF_HWKEY_CHANGED);
@@ -2841,7 +2813,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 intent.putExtra(EXTRA_QUICKAPP_SLOT3, prefs.getString(PREF_KEY_QUICKAPP_SLOT3_3, null));
             } else if (key.equals(PREF_KEY_QUICKAPP_SLOT4_3)) {
                 intent.setAction(ACTION_PREF_QUICKAPP_CHANGED_3);
-                intent.putExtra(EXTRA_QUICKAPP_SLOT4, prefs.getString(PREF_KEY_QUICKAPP_SLOT4_3, null));                
+                intent.putExtra(EXTRA_QUICKAPP_SLOT4, prefs.getString(PREF_KEY_QUICKAPP_SLOT4_3, null));
             } else if (key.equals(PREF_KEY_QUICKAPP_DEFAULT_4)) {
                 intent.setAction(ACTION_PREF_QUICKAPP_CHANGED_4);
                 intent.putExtra(EXTRA_QUICKAPP_DEFAULT, prefs.getString(PREF_KEY_QUICKAPP_DEFAULT_4, null));
@@ -2912,12 +2884,12 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
             } else if (key.equals(PREF_KEY_NAVBAR_KEY_COLOR)) {
                 intent.setAction(ACTION_PREF_NAVBAR_CHANGED);
                 intent.putExtra(EXTRA_NAVBAR_KEY_COLOR,
-                        prefs.getInt(PREF_KEY_NAVBAR_KEY_COLOR, 
+                        prefs.getInt(PREF_KEY_NAVBAR_KEY_COLOR,
                                 getActivity().getColor(R.color.navbar_key_color)));
             } else if (key.equals(PREF_KEY_NAVBAR_KEY_GLOW_COLOR)) {
                 intent.setAction(ACTION_PREF_NAVBAR_CHANGED);
                 intent.putExtra(EXTRA_NAVBAR_KEY_GLOW_COLOR,
-                        prefs.getInt(PREF_KEY_NAVBAR_KEY_GLOW_COLOR, 
+                        prefs.getInt(PREF_KEY_NAVBAR_KEY_GLOW_COLOR,
                                 getActivity().getColor(R.color.navbar_key_glow_color)));
             } else if (PREF_KEY_APP_LAUNCHER_SLOT.contains(key)) {
                 intent.setAction(ACTION_PREF_APP_LAUNCHER_CHANGED);
@@ -2970,15 +2942,15 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 intent.putExtra(EXTRA_DT_OMNI_MODE, prefs.getString(PREF_KEY_DATA_TRAFFIC_OMNI_MODE, "IN_OUT"));
             } else if (key.equals(PREF_KEY_DATA_TRAFFIC_OMNI_SHOW_ICON)) {
                 intent.setAction(ACTION_PREF_DATA_TRAFFIC_CHANGED);
-                intent.putExtra(EXTRA_DT_OMNI_SHOW_ICON, 
+                intent.putExtra(EXTRA_DT_OMNI_SHOW_ICON,
                         prefs.getBoolean(PREF_KEY_DATA_TRAFFIC_OMNI_SHOW_ICON, true));
             } else if (key.equals(PREF_KEY_DATA_TRAFFIC_OMNI_AUTOHIDE)) {
                 intent.setAction(ACTION_PREF_DATA_TRAFFIC_CHANGED);
-                intent.putExtra(EXTRA_DT_OMNI_AUTOHIDE, 
+                intent.putExtra(EXTRA_DT_OMNI_AUTOHIDE,
                         prefs.getBoolean(PREF_KEY_DATA_TRAFFIC_OMNI_AUTOHIDE, false));
             } else if (key.equals(PREF_KEY_DATA_TRAFFIC_OMNI_AUTOHIDE_TH)) {
                 intent.setAction(ACTION_PREF_DATA_TRAFFIC_CHANGED);
-                intent.putExtra(EXTRA_DT_OMNI_AUTOHIDE_TH, 
+                intent.putExtra(EXTRA_DT_OMNI_AUTOHIDE_TH,
                         prefs.getInt(PREF_KEY_DATA_TRAFFIC_OMNI_AUTOHIDE_TH, 10));
             } else if (key.equals(PREF_KEY_DATA_TRAFFIC_POSITION)) {
                 intent.setAction(ACTION_PREF_DATA_TRAFFIC_CHANGED);
@@ -3159,15 +3131,15 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 intent.putExtra(EXTRA_BBAR_DYNACOLOR, prefs.getBoolean(key, true));
             } else if (key.equals(PREF_KEY_BATTERY_BAR_COLOR)) {
                 intent.setAction(ACTION_PREF_BATTERY_BAR_CHANGED);
-                intent.putExtra(EXTRA_BBAR_COLOR, prefs.getInt(key, 
+                intent.putExtra(EXTRA_BBAR_COLOR, prefs.getInt(key,
                         getResources().getInteger(R.integer.COLOR_WHITE)));
             } else if (key.equals(PREF_KEY_BATTERY_BAR_COLOR_LOW)) {
                 intent.setAction(ACTION_PREF_BATTERY_BAR_CHANGED);
-                intent.putExtra(EXTRA_BBAR_COLOR_LOW, prefs.getInt(key, 
+                intent.putExtra(EXTRA_BBAR_COLOR_LOW, prefs.getInt(key,
                         getResources().getInteger(R.integer.COLOR_ORANGE)));
             } else if (key.equals(PREF_KEY_BATTERY_BAR_COLOR_CRITICAL)) {
                 intent.setAction(ACTION_PREF_BATTERY_BAR_CHANGED);
-                intent.putExtra(EXTRA_BBAR_COLOR_CRITICAL, prefs.getInt(key, 
+                intent.putExtra(EXTRA_BBAR_COLOR_CRITICAL, prefs.getInt(key,
                         getResources().getInteger(R.integer.COLOR_RED)));
             } else if (key.equals(PREF_KEY_BATTERY_BAR_CHARGE_ANIM)) {
                 intent.setAction(ACTION_PREF_BATTERY_BAR_CHANGED);
@@ -3177,7 +3149,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 intent.putExtra(EXTRA_BBAR_CENTERED, prefs.getBoolean(key, false));
             } else if (key.equals(PREF_KEY_BATTERY_BAR_COLOR_CHARGING)) {
                 intent.setAction(ACTION_PREF_BATTERY_BAR_CHANGED);
-                intent.putExtra(EXTRA_BBAR_COLOR_CHARGING, prefs.getInt(key, 
+                intent.putExtra(EXTRA_BBAR_COLOR_CHARGING, prefs.getInt(key,
                         getResources().getInteger(R.integer.COLOR_GREEN)));
             } else if (key.equals(PREF_KEY_QS_RAMBAR_MODE)) {
                 intent.setAction(ACTION_PREF_QUICKSETTINGS_CHANGED);
@@ -3210,7 +3182,7 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                 intent.putExtra(EXTRA_PIE_TRIGIND, prefs.getBoolean(key, false));
             } else if (key.equals(PREF_KEY_PIE_TRIGIND_COLOR)) {
                 intent.setAction(ACTION_PREF_PIE_CHANGED);
-                intent.putExtra(EXTRA_PIE_TRIGIND_COLOR, prefs.getInt(key, 
+                intent.putExtra(EXTRA_PIE_TRIGIND_COLOR, prefs.getInt(key,
                         getActivity().getColor(R.color.pie_trigind_color)));
             } else if (key.equals(PREF_KEY_POWER_CAMERA_VP)) {
                 intent.setAction(ACTION_PREF_POWER_CHANGED);
@@ -3498,12 +3470,16 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
                     Toast.makeText(getActivity(), R.string.settings_restore_no_backup, Toast.LENGTH_SHORT).show();
                 }
             } else if (PREF_LED_CONTROL.equals(pref.getKey())) {
+                String transId = mPrefs.getString(PREF_KEY_TRANS_VERIFICATION, null);
+                boolean isPremium = transId != null && !transId.trim().isEmpty();
                 intent = new Intent(getActivity(), LedMainActivity.class);
-                intent.putExtra(LedMainActivity.EXTRA_UUID_REGISTERED, sSystemProperties.uuidRegistered);
+                intent.putExtra(LedMainActivity.EXTRA_UUID_REGISTERED, isPremium);
                 intent.putExtra(LedMainActivity.EXTRA_TRIAL_COUNTDOWN, sSystemProperties.uncTrialCountdown);
             } else if (PREF_TUNER.equals(pref.getKey())) {
+                String transId = mPrefs.getString(PREF_KEY_TRANS_VERIFICATION, null);
+                boolean isPremium = transId != null && !transId.trim().isEmpty();
                 intent = new Intent(getActivity(), TunerMainActivity.class);
-                intent.putExtra(TunerMainActivity.EXTRA_UUID_REGISTERED, sSystemProperties.uuidRegistered);
+                intent.putExtra(TunerMainActivity.EXTRA_UUID_REGISTERED, isPremium);
                 intent.putExtra(TunerMainActivity.EXTRA_TRIAL_COUNTDOWN, sSystemProperties.tunerTrialCountdown);
             } else if (PREF_KEY_NAVBAR_CUSTOM_KEY_IMAGE.equals(pref.getKey())) {
                 setNavbarCustomKeyImage();
@@ -3705,54 +3681,22 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
         }
 
         private void checkTransaction(String transactionId) {
-            mTransWebServiceClient = new WebServiceClient<>(getActivity(),
-                    new WebServiceTaskListener<TransactionResult>() {
-                        @Override
-                        public void onWebServiceTaskCompleted(final TransactionResult result) {
-                            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
-                                    .setTitle(R.string.app_name)
-                                    .setMessage(result.getTransactionStatusMessage())
-                                    .setPositiveButton(android.R.string.ok, (dialog, which) -> {
-                                        dialog.dismiss();
-                                        if (result.getTransactionStatus() == TransactionStatus.TRANSACTION_VALID) {
-                                            Intent intent = new Intent(SystemPropertyProvider.ACTION_REGISTER_UUID);
-                                            intent.putExtra(SystemPropertyProvider.EXTRA_UUID,
-                                                    SettingsManager.getInstance(getActivity()).getOrCreateUuid());
-                                            intent.putExtra(SystemPropertyProvider.EXTRA_UUID_TYPE, "PayPal");
-                                            getActivity().sendBroadcast(intent);
-                                            LedSettings.lockUnc(getActivity(), false);
-                                            TunerMainActivity.lockTuner(getActivity(), false);
-                                            getActivity().finish();
-                                        }
-                                    });
-                            mDialog = builder.create();
-                            mDialog.show();
-                        }
-
-                        @Override
-                        public void onWebServiceTaskCancelled() {
-                            Toast.makeText(getActivity(), R.string.wsc_task_cancelled, Toast.LENGTH_SHORT).show();
-                        }
-
-                        @Override
-                        public TransactionResult obtainWebServiceResultInstance() {
-                            return new TransactionResult(getActivity());
-                        }
-
-                        @Override
-                        public void onWebServiceTaskError(TransactionResult result) {
-                            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
-                                    .setTitle(R.string.app_name)
-                                    .setMessage(result.getMessage())
-                                    .setPositiveButton(android.R.string.ok, (dialog, which) -> dialog.dismiss());
-                            mDialog = builder.create();
-                            mDialog.show();
-                        }
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.app_name)
+                    .setMessage(R.string.premium_unlocked_message)
+                    .setPositiveButton(android.R.string.ok, (dialog, which) -> {
+                        dialog.dismiss();
+                        Intent intent = new Intent(SystemPropertyProvider.ACTION_REGISTER_UUID);
+                        intent.putExtra(SystemPropertyProvider.EXTRA_UUID,
+                                SettingsManager.getInstance(getActivity()).getOrCreateUuid());
+                        intent.putExtra(SystemPropertyProvider.EXTRA_UUID_TYPE, "PayPal");
+                        getActivity().sendBroadcast(intent);
+                        LedSettings.lockUnc(getActivity(), false);
+                        TunerMainActivity.lockTuner(getActivity(), false);
+                        getActivity().finish();
                     });
-            RequestParams params = new RequestParams(getActivity());
-            params.setAction("checkTransaction");
-            params.addParam("transactionId", transactionId);
-            mTransWebServiceClient.execute(params);
+            mDialog = builder.create();
+            mDialog.show();
         }
     }
 }

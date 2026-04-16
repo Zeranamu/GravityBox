@@ -115,7 +115,7 @@
     <string name="pref_cat_misc_summary">Contains all other tweaks not falling into specific category</string>
 
     <!-- About -->
-    <string name="pref_cat_about_title">About</string>
+    <string name="pref_cat_about_title">About &amp; Premium</string>
     <string name="about_gb_summary">Coded by C3C076@XDA. Touch to visit official thread.</string>
     <string name="about_xposed_title">Xposed framework</string>
     <string name="about_xposed_summary">Coded by rovo89@XDA. Touch to visit official thread.</string>
@@ -822,9 +822,9 @@
     <string name="wsc_trans_invalid">Unable to find record for specified transaction ID</string>
     <string name="wsc_trans_violation">Specified transaction ID has been registered too many times. Contact GravityBox dev to resolve.</string>
     <string name="wsc_trans_blocked">Specified transaction ID has been blocked. Contact GravityBox dev to resolve.</string>
-    <string name="pref_trans_verification_title">PayPal transaction ID</string>
-    <string name="pref_trans_verification_summary">In case you donated, you can enter your PayPal donation transaction ID to unlock premium features</string>
-    <string name="wsc_trans_required_summary">This feature is premium and requires unlocking</string>
+    <string name="pref_trans_verification_title">Premium login</string>
+    <string name="pref_trans_verification_summary">Enter any email to unlock premium features</string>
+    <string name="wsc_trans_required_summary">This feature is premium and requires login</string>
 
     <!-- Pie: disable system info -->
     <string name="pref_pie_sysinfo_disable_title">Disable system info</string>
@@ -1127,7 +1127,7 @@
     <string name="battery_style_circle_dashed_percent">Dashed circle battery with percentage</string>
 
     <!-- Premium feature unlock via unlocker app -->
-    <string name="premium_unlocked_message">Thank you for your support. Premium features will be unlocked after system is restarted.</string>
+    <string name="premium_unlocked_message">Premium features will be unlocked after system is restarted.</string>
     <string name="pref_about_get_unlocker_title">Get unlocker</string>
     <string name="pref_about_get_unlocker_summary">Don\'t have PayPal? Simply touch here to get GravityBox premium feature unlocker from the Play Store.</string>
 
