@@ -1376,7 +1376,13 @@ public class GravityBoxSettings extends GravityBoxActivity implements GravityBox
             mPrefAboutEdXposed = findPreference(PREF_KEY_ABOUT_EDXPOSED);
             mPrefAboutRiru = findPreference(PREF_KEY_ABOUT_RIRU);
             mPrefAboutDonate = findPreference(PREF_KEY_ABOUT_DONATE);
+            if (mPrefAboutDonate != null) {
+                mPrefCatAbout.removePreference(mPrefAboutDonate);
+            }
             mPrefAboutUnlocker = findPreference(PREF_KEY_ABOUT_UNLOCKER);
+            if (mPrefAboutUnlocker != null) {
+                mPrefCatAbout.removePreference(mPrefAboutUnlocker);
+            }
 
             mPrefEngMode = findPreference(PREF_KEY_ENGINEERING_MODE);
             if (!Utils.isAppInstalled(getActivity(), APP_ENGINEERING_MODE)) {

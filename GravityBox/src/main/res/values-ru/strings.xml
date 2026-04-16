@@ -814,8 +814,8 @@
     <string name="wsc_trans_invalid">Не удалось найти запись для ID указанной транзакции</string>
     <string name="wsc_trans_violation">Указанный ID транзакции был использован слишком много раз. Свяжитесь с разработчиком GravityBox для решения проблемы.</string>
     <string name="wsc_trans_blocked">Указанный ID транзакции заблокирован. Свяжитесь с разработчиком GravityBox для решения проблемы.</string>
-    <string name="pref_trans_verification_title">ID транзакции PayPal</string>
-    <string name="pref_trans_verification_summary">Если Вы внесли пожертвование, можете ввести ID транзакции пожертвования PayPal для разблокировки премиум-функций</string>
+    <string name="pref_trans_verification_title">Премиум-логин</string>
+    <string name="pref_trans_verification_summary">Введите любой email для разблокировки премиум-функций</string>
     <string name="wsc_trans_required_summary">Функция требует действительного ID транзакции PayPal</string>
 
     <!-- Pie: disable system info -->
