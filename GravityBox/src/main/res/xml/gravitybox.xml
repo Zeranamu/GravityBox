@@ -2464,7 +2464,7 @@
     <Preference
         android:key="pref_engineering_mode"
         android:title="@string/engineering_mode_title"
-        android:summary="@string/engineering_mode_summary" />"
+        android:summary="@string/engineering_mode_summary" />
 
     <PreferenceScreen
         android:key="pref_cat_about"
@@ -2477,17 +2477,17 @@
         <Preference
             android:key="pref_about_xposed"
             android:title="@string/about_xposed_title"
-            android:summary="@string/about_xposed_summary" />"
+            android:summary="@string/about_xposed_summary" />
 
         <Preference
             android:key="pref_about_edxposed"
             android:title="@string/about_edxposed_title"
-            android:summary="@string/about_edxposed_summary" />"
+            android:summary="@string/about_edxposed_summary" />
 
         <Preference
             android:key="pref_about_riru"
             android:title="@string/about_riru_title"
-            android:summary="@string/about_riru_summary" />"
+            android:summary="@string/about_riru_summary" />
 
         <EditTextPreference
             android:key="pref_trans_verification"
