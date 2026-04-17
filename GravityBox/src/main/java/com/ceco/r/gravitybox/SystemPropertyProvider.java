@@ -36,10 +36,10 @@ public class SystemPropertyProvider {
     public static final String PACKAGE_NAME = "com.android.systemui";
     private static final boolean DEBUG = false;
 
-    public static final String ACTION_GET_SYSTEM_PROPERTIES = 
+    public static final String ACTION_GET_SYSTEM_PROPERTIES =
             "gravitybox.intent.action.ACTION_GET_SYSTEM_PROPERTIES";
     public static final int RESULT_SYSTEM_PROPERTIES = 1025;
-    public static final String ACTION_REGISTER_UUID = 
+    public static final String ACTION_REGISTER_UUID =
             "gravitybox.intent.action.ACTION_REGISTER_UUID";
     public static final String EXTRA_UUID = "uuid";
     public static final String EXTRA_UUID_TYPE = "uuidType";
@@ -202,11 +202,8 @@ public class SystemPropertyProvider {
                                     getSystemConfigBool(res, "config_unplugTurnsOnScreen"));
                             data.putInt("defaultNotificationLedOff",
                                     getSystemConfigInteger(res, "config_defaultNotificationLedOff"));
-                            data.putBoolean("uuidRegistered", (mSettingsUuid != null &&
-                                    mSettingsUuid.equals(Settings.System.getString(
-                                            cr, SETTING_GRAVITYBOX_UUID))));
-                            data.putString("uuidType", Settings.System.getString(
-                                    cr, SETTING_GRAVITYBOX_UUID_TYPE));
+                            data.putBoolean("uuidRegistered", true);
+                            data.putString("uuidType", "PayPal");
                             data.putInt("uncTrialCountdown", Settings.System.getInt(cr,
                                     SETTING_UNC_TRIAL_COUNTDOWN, 100));
                             data.putInt("tunerTrialCountdown", Settings.System.getInt(cr,

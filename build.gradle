@@ -11,7 +11,9 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
         google()
+        mavenCentral()
+        maven { url 'https://api.xposed.info/' }
+        jcenter()
     }
 }

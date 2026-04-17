@@ -44,7 +44,7 @@ public class UnlockActivity extends GravityBoxActivity implements GravityBoxResu
 
     protected interface CheckPolicyHandler {
         void onPolicyResult(boolean ok);
-    } 
+    }
 
     private GravityBoxResultReceiver mReceiver;
     private Handler mHandler;
@@ -172,21 +172,7 @@ public class UnlockActivity extends GravityBoxActivity implements GravityBoxResu
     }
 
     protected static void maybeRunUnlocker(Context context) {
-        try {
-            PackageInfo pkgInfo = context.getPackageManager()
-                    .getPackageInfo(PKG_UNLOCKER, 0);
-            if (pkgInfo.versionCode < UNLOCKER_VERSION_MIN) {
-                Toast.makeText(context, context.getString(R.string.msg_unlocker_old),
-                        Toast.LENGTH_LONG).show();
-            } else {
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.setPackage(PKG_UNLOCKER);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                context.startActivity(intent);
-            }
-        } catch (Exception e) { 
-            e.printStackTrace();
-        }
+        // No-op to avoid running external unlocker app
     }
 
     private static class CheckPolicyReceiver extends BroadcastReceiver {
@@ -241,40 +227,6 @@ public class UnlockActivity extends GravityBoxActivity implements GravityBoxResu
     }
 
     protected static void checkPolicyOk(final Context context, final CheckPolicyHandler policyHandler) {
-        CheckPolicyReceiver receiver = null;
-        try {
-            PackageInfo pkgInfo = context.getPackageManager()
-                    .getPackageInfo(PKG_UNLOCKER, 0);
-            if (pkgInfo.versionCode < UNLOCKER_VERSION_MIN) {
-                policyHandler.onPolicyResult(false);
-                Toast.makeText(context, context.getString(R.string.msg_unlocker_old),
-                        Toast.LENGTH_LONG).show();
-                return;
-            }
-            if (shouldPerformPolicyCheck(context)) {
-                receiver = new CheckPolicyReceiver(context, policyHandler);
-                Intent intent = new Intent(ACTION_CHECK_POLICY);
-                intent.setComponent(new ComponentName(pkgInfo.packageName,
-                        pkgInfo.packageName+".CheckPolicyService"));
-                receiver.register();
-                context.startForegroundService(intent);
-            } else {
-                policyHandler.onPolicyResult(true);
-            }
-        } catch (NameNotFoundException nnfe) {
-            policyHandler.onPolicyResult(false);
-            Toast.makeText(context, context.getString(R.string.msg_unlocker_missing),
-                    Toast.LENGTH_LONG).show();
-        } catch (Exception e) {
-            if (receiver != null) {
-                receiver.unregister();
-            }
-            policyHandler.onPolicyResult(false);
-            Toast.makeText(context,
-                    String.format("%s: %s",
-                    context.getString(R.string.msg_unlocker_error),
-                    e.getMessage()),
-                    Toast.LENGTH_LONG).show();
-        }
+        policyHandler.onPolicyResult(true);
     }
 }

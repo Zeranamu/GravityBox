@@ -22,7 +22,7 @@
         android:title="@string/pref_cat_lockscreen_title"
         android:summary="@string/pref_cat_lockscreen_summary">
 
-        <PreferenceCategory 
+        <PreferenceCategory
             android:key="pref_cat_lockscreen_background"
             android:title="@string/pref_cat_lockscreen_background_title">
 
@@ -34,7 +34,7 @@
                 android:defaultValue="default"
                 android:order="1" />
 
-            <net.margaritov.preference.colorpicker.ColorPickerPreference 
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
                 android:key="pref_lockscreen_bg_color"
                 android:title="@string/pref_lockscreen_bg_color_title"
                 android:summary="@string/pref_lockscreen_bg_color_summary"
@@ -88,7 +88,7 @@
                 maximum="100"
                 interval="1"
                 monitorBoxEnabled="true"
-                monitorBoxUnit="%" 
+                monitorBoxUnit="%"
                 android:defaultValue="0"
                 android:order="6" />
 
@@ -103,13 +103,13 @@
                 android:title="@string/pref_lockscreen_shortcuts_title"
                 android:summary="@string/pref_lockscreen_shortcuts_summary">
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_lockscreen_shortcuts_safe_launch"
                     android:title="@string/pref_lockscreen_shortcuts_safe_launch_title"
                     android:summary="@string/pref_lockscreen_shortcuts_safe_launch_summary"
                     android:defaultValue="false" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_lockscreen_shortcuts_show_badges"
                     android:title="@string/pref_lockscreen_shortcuts_show_badges_title"
                     android:summary="@string/pref_lockscreen_shortcuts_show_badges_summary"
@@ -122,14 +122,14 @@
                     maximum="20"
                     interval="1"
                     monitorBoxEnabled="true"
-                    monitorBoxUnit="%" 
+                    monitorBoxUnit="%"
                     android:defaultValue="0" />
 
                 <!-- will be populated at runtime -->
 
             </PreferenceScreen>
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_lockscreen_rotation2"
                 android:title="@string/pref_lockscreen_rotation_title"
                 android:summary="@string/pref_lockscreen_rotation_summary"
@@ -137,7 +137,7 @@
                 android:entryValues="@array/tri_state_values"
                 android:defaultValue="DEFAULT" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_lockscreen_quick_unlock"
                 android:title="@string/pref_lockscreen_quick_unlock_title"
                 android:summary="@string/pref_lockscreen_quick_unlock_summary"
@@ -151,17 +151,17 @@
                 maximum="20"
                 interval="1"
                 monitorBoxEnabled="true"
-                monitorBoxUnit="" 
+                monitorBoxUnit=""
                 android:defaultValue="4"
                 android:dependency="pref_lockscreen_quick_unlock" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_lockscreen_pin_sramble"
                 android:title="@string/pref_lockscreen_pin_sramble_title"
                 android:summary="@string/pref_lockscreen_pin_sramble_summary"
                 android:defaultValue="false" />
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_lockscreen_direct_unlock2"
                 android:title="@string/pref_lockscreen_direct_unlock_title"
                 android:summary="@string/pref_lockscreen_direct_unlock_summary"
@@ -169,20 +169,20 @@
                 android:entryValues="@array/direct_unlock_values"
                 android:defaultValue="OFF" />
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_lockscreen_direct_unlock_policy"
                 android:title="@string/pref_lockscreen_direct_unlock_policy_title"
                 android:entries="@array/direct_unlock_policy_entries"
                 android:entryValues="@array/direct_unlock_policy_values"
                 android:defaultValue="DEFAULT" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_lockscreen_smart_unlock"
                 android:title="@string/pref_lockscreen_smart_unlock_title"
                 android:summary="@string/pref_lockscreen_smart_unlock_summary"
                 android:defaultValue="false" />
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_lockscreen_smart_unlock_policy"
                 android:title="@string/pref_lockscreen_smart_unlock_policy_title"
                 android:entries="@array/direct_unlock_policy_entries"
@@ -190,21 +190,21 @@
                 android:defaultValue="DEFAULT"
                 android:dependency="pref_lockscreen_smart_unlock" />
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_lockscreen_imprint_mode"
                 android:title="@string/pref_lockscreen_imprint_mode_title"
                 android:entries="@array/imprint_mode_entries"
                 android:entryValues="@array/imprint_mode_values"
                 android:defaultValue="DEFAULT" />
 
-            <MultiSelectListPreference 
+            <MultiSelectListPreference
                 android:key="pref_imprint_vibe_disable"
                 android:title="@string/pref_imprint_vibe_disable_title"
                 android:entries="@array/imprint_vibe_disable_entries"
                 android:entryValues="@array/imprint_vibe_disable_values"
                 android:defaultValue="@array/empty_array" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_lockscreen_dt2s"
                 android:title="@string/pref_lockscreen_dt2s_title"
                 android:defaultValue="false" />
@@ -215,7 +215,7 @@
                 android:title="@string/pref_lockscreen_carrier_text_title"
                 android:defaultValue="" />
 
-            <MultiSelectListPreference 
+            <MultiSelectListPreference
                 android:key="pref_lockscreen_bottom_actions_hide"
                 android:title="@string/pref_lockscreen_bottom_actions_hide_title"
                 android:entries="@array/ls_bottom_action_entries"
@@ -251,7 +251,7 @@
 
     </PreferenceScreen>
 
-    <PreferenceScreen 
+    <PreferenceScreen
         android:key="pref_cat_statusbar"
         android:title="@string/pref_cat_statusbar_title"
         android:summary="@string/pref_cat_statusbar_summary">
@@ -276,7 +276,7 @@
                     android:targetClass="com.ceco.r.gravitybox.quicksettings.TileOrderActivity" />
             </PreferenceScreen>
 
-            <PreferenceScreen 
+            <PreferenceScreen
                 android:key="pref_cat_qs_tile_settings"
                 android:title="@string/pref_cat_qs_tile_settings_title"
                 android:summary="@string/pref_cat_qs_tile_settings_summary"
@@ -302,27 +302,27 @@
                     android:key="pref_cat_qs_battery_tile"
                     android:title="@string/pref_cat_qs_battery_tile_title">
 
-                    <CheckBoxPreference 
+                    <CheckBoxPreference
                         android:key="pref_battery_tile_temp"
                         android:title="@string/pref_battery_tile_temp_title"
                         android:defaultValue="false" />
 
                     <ListPreference
-                        android:key="pref_battery_tile_temp_unit" 
+                        android:key="pref_battery_tile_temp_unit"
                         android:title="@string/pref_battery_tile_temp_unit_title"
                         android:entries="@array/temperature_unit_entries"
                         android:entryValues="@array/temperature_unit_values"
                         android:defaultValue="C"
                         android:dependency="pref_battery_tile_temp" />
 
-                    <CheckBoxPreference 
+                    <CheckBoxPreference
                         android:key="pref_battery_tile_voltage"
                         android:title="@string/pref_battery_tile_voltage_title"
                         android:defaultValue="false" />
 
                 </PreferenceScreen>
 
-                <!-- 
+                <!--
                 <PreferenceScreen
                     android:key="pref_cat_qs_cell_tile"
                     android:title="@string/pref_cat_qs_cell_tile_title">
@@ -467,7 +467,7 @@
                     android:title="@string/pref_cat_quickrecord_tile_title" >
 
                     <ListPreference
-                        android:key="pref_quickrecord_quality" 
+                        android:key="pref_quickrecord_quality"
                         android:title="@string/pref_quickrecord_quality_title"
                         android:entries="@array/qr_audio_quality_entries"
                         android:entryValues="@array/qr_audio_quality_values"
@@ -481,16 +481,16 @@
                         maximum="10"
                         interval="1"
                         monitorBoxEnabled="true"
-                        monitorBoxUnit="h" 
+                        monitorBoxUnit="h"
                         android:defaultValue="1" />
 
                 </PreferenceScreen-->
 
-                <PreferenceScreen 
+                <PreferenceScreen
                     android:key="pref_cat_qs_nm_tile_settings"
                     android:title="@string/pref_cat_qs_nm_tile_settings_title">
 
-                    <MultiSelectListPreference 
+                    <MultiSelectListPreference
                         android:key="pref_nm_tile_enabled_modes"
                         android:title="@string/pref_tile_enabled_modes_title"
                         android:summary="@string/pref_nm_tile_enabled_modes_summary"
@@ -499,7 +499,7 @@
                         android:defaultValue="@array/network_mode_values_default" />
 
                     <ListPreference
-                        android:key="pref_qs_network_mode_sim_slot" 
+                        android:key="pref_qs_network_mode_sim_slot"
                         android:title="@string/pref_qs_network_mode_sim_slot_title"
                         android:entries="@array/network_mode_sim_slot_entries"
                         android:entryValues="@array/network_mode_sim_slot_values"
@@ -508,11 +508,11 @@
 
                 </PreferenceScreen>
 
-                <PreferenceScreen 
+                <PreferenceScreen
                     android:key="pref_cat_qs_rm_tile"
                     android:title="@string/pref_cat_qs_rm_tile_title">
 
-                    <MultiSelectListPreference 
+                    <MultiSelectListPreference
                         android:key="pref_qs_ringer_mode3"
                         android:title="@string/pref_tile_enabled_modes_title"
                         android:summary="@string/pref_rm_tile_enabled_modes_summary"
@@ -522,11 +522,11 @@
 
                 </PreferenceScreen>
 
-                <PreferenceScreen 
+                <PreferenceScreen
                     android:key="pref_cat_qs_sa_tile"
                     android:title="@string/pref_cat_qs_sa_tile_title">
 
-                    <MultiSelectListPreference 
+                    <MultiSelectListPreference
                         android:key="pref_qs_stay_awake"
                         android:title="@string/pref_tile_enabled_modes_title"
                         android:summary="@string/pref_sa_tile_enabled_modes_summary"
@@ -534,7 +534,7 @@
                         android:entryValues="@array/stay_awake_values"
                         android:defaultValue="@array/stay_awake_values" />
 
-                    <CheckBoxPreference 
+                    <CheckBoxPreference
                         android:key="pref_sa_tile_auto_reset"
                         android:title="@string/pref_sa_tile_auto_reset_title"
                         android:summary="@string/pref_sa_tile_auto_reset_summary"
@@ -557,9 +557,9 @@
             </PreferenceScreen>
 
             <ListPreference
-                android:key="pref_qs_tiles_per_row2" 
+                android:key="pref_qs_tiles_per_row2"
                 android:title="@string/pref_qs_tiles_per_row_title"
-                android:summary="@string/pref_qs_tiles_per_row_summary" 
+                android:summary="@string/pref_qs_tiles_per_row_summary"
                 android:entries="@array/qs_tiles_per_row_entries"
                 android:entryValues="@array/qs_tiles_per_row_values"
                 android:defaultValue="0"
@@ -572,22 +572,22 @@
                 maximum="30"
                 interval="1"
                 monitorBoxEnabled="true"
-                monitorBoxUnit="%" 
+                monitorBoxUnit="%"
                 android:defaultValue="0"
                 android:dependency="pref_qs_management_enable" />
 
             <ListPreference
-                android:key="pref_qs_tiles_per_header" 
+                android:key="pref_qs_tiles_per_header"
                 android:title="@string/pref_qs_tiles_per_header_title"
-                android:summary="@string/pref_qs_tiles_per_header_summary" 
+                android:summary="@string/pref_qs_tiles_per_header_summary"
                 android:entries="@array/qs_tiles_per_header_entries"
                 android:entryValues="@array/qs_tiles_per_header_values"
                 android:defaultValue="0"
                 android:dependency="pref_qs_management_enable" />
 
             <ListPreference
-                android:key="pref_qs_locked_tile_indicator" 
-                android:title="@string/pref_qs_locked_tile_indicator_title" 
+                android:key="pref_qs_locked_tile_indicator"
+                android:title="@string/pref_qs_locked_tile_indicator_title"
                 android:entries="@array/locked_tile_indicator_entries"
                 android:entryValues="@array/locked_tile_indicator_values"
                 android:defaultValue="DIM"
@@ -595,29 +595,29 @@
 
             <!--
             <ListPreference
-                android:key="pref_qs_tile_label_style" 
-                android:title="@string/pref_qs_tile_label_style_title" 
+                android:key="pref_qs_tile_label_style"
+                android:title="@string/pref_qs_tile_label_style_title"
                 android:entries="@array/tile_label_style_entries"
                 android:entryValues="@array/tile_label_style_values"
                 android:defaultValue="ALLCAPS"
                 android:dependency="pref_qs_management_enable" />
             -->
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_qs_hide_on_change"
                 android:title="@string/pref_qs_hide_on_change_title"
                 android:summary="@string/pref_qs_hide_on_change_summary"
                 android:defaultValue="false"
                 android:dependency="pref_qs_management_enable" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_qs_haptic_feedback"
                 android:title="@string/pref_qs_haptic_feedback_title"
                 android:summary="@string/pref_qs_haptic_feedback_summary"
                 android:defaultValue="false"
                 android:dependency="pref_qs_management_enable" />
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_auto_switch_qs2"
                 android:title="@string/pref_auto_switch_qs_title"
                 android:summary="@string/pref_auto_switch_qs_summary"
@@ -627,7 +627,7 @@
                 android:dependency="pref_qs_management_enable" />
 
             <ListPreference
-                android:key="pref_quick_pulldown" 
+                android:key="pref_quick_pulldown"
                 android:title="@string/pref_quick_pulldown_title"
                 android:summary="@string/pref_quick_pulldown_summary"
                 android:entries="@array/quick_pulldown_entries"
@@ -642,7 +642,7 @@
                 maximum="40"
                 interval="1"
                 monitorBoxEnabled="true"
-                monitorBoxUnit="%" 
+                monitorBoxUnit="%"
                 android:defaultValue="15" />
 
             <ListPreference
@@ -652,13 +652,13 @@
                 android:entryValues="@array/rambar_values"
                 android:defaultValue="OFF" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_qs_hide_brightness"
                 android:title="@string/pref_qs_hide_brightness_title"
                 android:defaultValue="false"
                 android:dependency="pref_qs_management_enable" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_qs_brightness_icon"
                 android:title="@string/pref_qs_brightness_icon_title"
                 android:summary="@string/pref_qs_brightness_icon_summary"
@@ -670,7 +670,7 @@
             android:key="pref_cat_notification_drawer_style"
             android:title="@string/pref_cat_notification_drawer_style_title" >
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_notif_expand_all"
                 android:title="@string/pref_notif_expand_all_title"
                 android:summary="@string/pref_notif_expand_all_summary"
@@ -679,11 +679,11 @@
 
         </PreferenceScreen>
 
-        <PreferenceScreen 
+        <PreferenceScreen
             android:key="pref_cat_notif_heads_up"
             android:title="@string/pref_cat_notif_heads_up_title">
 
-            <SwitchPreference 
+            <SwitchPreference
                 android:key="pref_heads_up_master_switch"
                 android:title="@string/pref_masterswitch_title"
                 android:summary="@string/pref_heads_up_master_switch_summary"
@@ -707,15 +707,15 @@
             android:key="pref_cat_battery_settings"
             android:title="@string/pref_cat_battery_settings_title">
 
-            <SwitchPreference 
+            <SwitchPreference
                 android:key="pref_battery_masterswitch"
                 android:title="@string/pref_masterswitch_title"
                 android:summary="@string/pref_battery_masterswitch_summary"
                 android:defaultValue="true" />
 
             <ListPreference
-                android:key="pref_battery_style" 
-                android:title="@string/battery_style_title" 
+                android:key="pref_battery_style"
+                android:title="@string/battery_style_title"
                 android:entries="@array/battery_style_entries"
                 android:entryValues="@array/battery_style_values"
                 android:defaultValue="1"
@@ -733,7 +733,7 @@
                 android:title="@string/battery_percent_text_title"
                 android:dependency="pref_battery_masterswitch">
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_battery_percent_text_statusbar"
                     android:title="@string/battery_percent_text_statusbar_title"
                     android:summary="@string/battery_percent_text_statusbar_summary"
@@ -745,7 +745,7 @@
                     android:summary="@string/battery_percent_text_statusbar_header_summary"
                     android:defaultValue="false" />
 
-                <ListPreference 
+                <ListPreference
                     android:key="pref_battery_percent_text_position"
                     android:title="@string/pref_battery_percent_text_position_title"
                     android:summary="@string/pref_battery_percent_text_position_summary"
@@ -753,7 +753,7 @@
                     android:entryValues="@array/battery_percent_text_position_values"
                     android:defaultValue="RIGHT" />
 
-                <ListPreference 
+                <ListPreference
                     android:key="pref_battery_percent_text_keyguard"
                     android:title="@string/battery_percent_text_keyguard_title"
                     android:summary="@string/battery_percent_text_keyguard_summary"
@@ -763,42 +763,42 @@
 
                 <ListPreference
                     android:key="pref_battery_percent_text_size"
-                    android:title="@string/battery_percent_text_size_title" 
+                    android:title="@string/battery_percent_text_size_title"
                     android:entries="@array/battery_percent_text_size_entries"
                     android:entryValues="@array/battery_percent_text_size_values"
                     android:defaultValue="0" />
 
                 <ListPreference
                     android:key="pref_battery_percent_text_style"
-                    android:title="@string/battery_percent_text_style_title" 
+                    android:title="@string/battery_percent_text_style_title"
                     android:entries="@array/battery_percent_text_style_entries"
                     android:entryValues="@array/battery_percent_text_style_values"
                     android:defaultValue="%" />
 
-                <ListPreference 
+                <ListPreference
                     android:key="battery_percent_text_charging"
                     android:title="@string/battery_percent_text_charging_title"
                     android:entries="@array/bpt_charging_entries"
                     android:entryValues="@array/bpt_charging_values"
                     android:defaultValue="0" />
 
-                <net.margaritov.preference.colorpicker.ColorPickerPreference 
+                <net.margaritov.preference.colorpicker.ColorPickerPreference
                     android:key="pref_battery_percent_text_charging_color"
                     android:title="@string/battery_percent_text_charging_color_title"
                     android:defaultValue="@integer/COLOR_GREEN" />
 
             </PreferenceScreen>
 
-            <PreferenceScreen 
+            <PreferenceScreen
                 android:key="pref_cat_battery_bar"
                 android:title="@string/pref_cat_battery_bar_title">
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_battery_bar_show"
                     android:title="@string/pref_battery_bar_show_title"
                     android:defaultValue="false" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_battery_bar_show_charging"
                     android:title="@string/pref_battery_bar_show_charging_title"
                     android:defaultValue="false"
@@ -810,7 +810,7 @@
                     android:defaultValue="false"
                     android:dependency="pref_battery_bar_show" />
 
-                <ListPreference 
+                <ListPreference
                     android:key="pref_battery_bar_position"
                     android:title="@string/pref_battery_bar_position_title"
                     android:entries="@array/bbar_position_entries"
@@ -840,19 +840,19 @@
                     android:defaultValue="2"
                     android:dependency="pref_battery_bar_show" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_battery_bar_centered"
                     android:title="@string/pref_battery_bar_centered_title"
                     android:defaultValue="false"
                     android:dependency="pref_battery_bar_show" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_battery_bar_charge_anim"
                     android:title="@string/pref_battery_bar_charge_anim_title"
                     android:defaultValue="false"
                     android:dependency="pref_battery_bar_show" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_battery_bar_dynacolor"
                     android:title="@string/pref_battery_bar_dynacolor_title"
                     android:summary="@string/pref_battery_bar_dynacolor_summary"
@@ -860,25 +860,25 @@
                     android:dependency="pref_battery_bar_show"
                     android:disableDependentsState="true" />
 
-                <net.margaritov.preference.colorpicker.ColorPickerPreference 
+                <net.margaritov.preference.colorpicker.ColorPickerPreference
                     android:key="pref_battery_bar_color"
                     android:title="@string/pref_battery_bar_color_title"
                     android:defaultValue="@integer/COLOR_WHITE"
                     android:dependency="pref_battery_bar_dynacolor" />
 
-                <net.margaritov.preference.colorpicker.ColorPickerPreference 
+                <net.margaritov.preference.colorpicker.ColorPickerPreference
                     android:key="pref_battery_bar_color_low"
                     android:title="@string/pref_battery_bar_color_low_title"
                     android:defaultValue="@integer/COLOR_ORANGE"
                     android:dependency="pref_battery_bar_dynacolor" />
 
-                <net.margaritov.preference.colorpicker.ColorPickerPreference 
+                <net.margaritov.preference.colorpicker.ColorPickerPreference
                     android:key="pref_battery_bar_color_critical"
                     android:title="@string/pref_battery_bar_color_critical_title"
                     android:defaultValue="@integer/COLOR_RED"
                     android:dependency="pref_battery_bar_dynacolor" />
 
-                <net.margaritov.preference.colorpicker.ColorPickerPreference 
+                <net.margaritov.preference.colorpicker.ColorPickerPreference
                     android:key="pref_battery_bar_color_charging"
                     android:title="@string/pref_battery_bar_color_charging_title"
                     android:defaultValue="@integer/COLOR_GREEN"
@@ -892,17 +892,17 @@
             android:key="pref_cat_clock_settings"
             android:title="@string/pref_cat_clock_settings_title">
 
-            <PreferenceCategory 
+            <PreferenceCategory
                 android:key="pref_cat_statusbar_clock"
                 android:title="@string/pref_cat_statusbar_clock_title">
 
-                <SwitchPreference 
+                <SwitchPreference
                     android:key="pref_sb_clock_masterswitch"
                     android:title="@string/pref_masterswitch_title"
                     android:summary="@string/pref_sb_clock_masterswitch_summary"
                     android:defaultValue="false" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_clock_hide"
                     android:title="@string/pref_clock_hide_title"
                     android:defaultValue="false"
@@ -925,13 +925,13 @@
                     android:defaultValue="DEFAULT"
                     android:dependency="pref_clock_hide" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_statusbar_clock_show_seconds"
                     android:title="@string/pref_statusbar_clock_show_seconds_title"
                     android:defaultValue="false"
                     android:dependency="pref_clock_hide" />
 
-                <ListPreference 
+                <ListPreference
                     android:key="pref_statusbar_clock_date2"
                     android:title="@string/pref_statusbar_clock_date_title"
                     android:entries="@array/clock_date_entries"
@@ -939,7 +939,7 @@
                     android:defaultValue="disabled"
                     android:dependency="pref_clock_hide" />
 
-                <ListPreference 
+                <ListPreference
                     android:key="pref_statusbar_clock_dow2"
                     android:title="@string/pref_statusbar_clock_dow_title"
                     android:entries="@array/clock_dow_entries"
@@ -958,7 +958,7 @@
                     android:defaultValue="70"
                     android:dependency="pref_clock_hide" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_clock_ampm_hide"
                     android:title="@string/pref_clock_ampm_hide_title"
                     android:defaultValue="false"
@@ -976,7 +976,7 @@
                     android:defaultValue="70"
                     android:dependency="pref_clock_ampm_hide" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_alarm_icon_hide"
                     android:title="@string/pref_alarm_icon_hide_title"
                     android:defaultValue="false"
@@ -984,7 +984,7 @@
 
             </PreferenceCategory>
 
-            <PreferenceCategory 
+            <PreferenceCategory
                 android:key="pref_cat_notif_panel_clock"
                 android:title="@string/pref_cat_notif_panel_clock_title">
 
@@ -998,23 +998,23 @@
 
         </PreferenceScreen>
 
-        <PreferenceScreen 
+        <PreferenceScreen
             android:key="pref_cat_data_traffic"
             android:title="@string/pref_cat_data_traffic_title">
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_data_traffic_mode"
                 android:title="@string/pref_data_traffic_mode_title"
                 android:entries="@array/data_traffic_mode_entries"
                 android:entryValues="@array/data_traffic_mode_values"
                 android:defaultValue="OFF" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_data_traffic_active_mobile_only"
                 android:title="@string/pref_data_traffic_active_mobile_only_title"
                 android:defaultValue="false" />
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_data_traffic_display_mode"
                 android:title="@string/pref_data_traffic_display_mode_title"
                 android:entries="@array/dt_display_mode_entries"
@@ -1023,12 +1023,12 @@
 
             <ListPreference
                 android:key="pref_data_traffic_position"
-                android:title="@string/pref_data_traffic_position_title" 
+                android:title="@string/pref_data_traffic_position_title"
                 android:entries="@array/data_traffic_position_entries"
                 android:entryValues="@array/data_traffic_position_values"
                 android:defaultValue="0" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_data_traffic_lockscreen"
                 android:title="@string/pref_data_traffic_lockscreen_title"
                 android:summary="@string/pref_data_traffic_lockscreen_summary"
@@ -1036,31 +1036,31 @@
 
             <ListPreference
                 android:key="pref_data_traffic_size"
-                android:title="@string/pref_data_traffic_size_title" 
+                android:title="@string/pref_data_traffic_size_title"
                 android:entries="@array/data_traffic_size_entries"
                 android:entryValues="@array/data_traffic_size_values"
                 android:defaultValue="14" />
 
             <ListPreference
                 android:key="pref_data_traffic_inactivity_mode"
-                android:title="@string/pref_data_traffic_inactivity_mode_title" 
+                android:title="@string/pref_data_traffic_inactivity_mode_title"
                 android:entries="@array/data_traffic_inactivity_mode_entries"
                 android:entryValues="@array/data_traffic_inactivity_mode_values"
                 android:defaultValue="0" />
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_data_traffic_omni_mode"
                 android:title="@string/pref_data_traffic_omni_mode_title"
                 android:entries="@array/data_traffic_omni_mode_entries"
                 android:entryValues="@array/data_traffic_omni_mode_values"
                 android:defaultValue="IN_OUT" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_data_traffic_omni_show_icon"
                 android:title="@string/pref_data_traffic_omni_show_icon_title"
                 android:defaultValue="true" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_data_traffic_omni_autohide"
                 android:title="@string/inactivity_mode_hide"
                 android:defaultValue="false" />
@@ -1078,12 +1078,12 @@
 
         </PreferenceScreen>
 
-        <PreferenceScreen 
+        <PreferenceScreen
             android:key="pref_cat_statusbar_download_progress"
             android:title="@string/pref_statusbar_download_progress_title"
             android:summary="@string/pref_statusbar_download_progress_summary">
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_statusbar_download_progress"
                 android:title="@string/pref_statusbar_download_progress_mode_title"
                 android:entries="@array/sb_download_progress_entries"
@@ -1110,12 +1110,12 @@
                 monitorBoxUnit="px"
                 android:defaultValue="1" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_statusbar_download_progress_centered"
                 android:title="@string/pref_statusbar_download_progress_centered_title"
                 android:defaultValue="false" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_statusbar_download_progress_animated"
                 android:title="@string/pref_statusbar_download_progress_animated_title"
                 android:defaultValue="true" />
@@ -1130,7 +1130,7 @@
                     android:summary="@string/pref_statusbar_download_progress_sound_enable_summary"
                     android:defaultValue="false" />
 
-                <RingtonePreference 
+                <RingtonePreference
                     android:key="pref_statusbar_download_progress_sound"
                     android:title="@string/pref_statusbar_download_progress_sound_title"
                     android:ringtoneType="notification"
@@ -1150,19 +1150,19 @@
 
         </PreferenceScreen>
 
-        <ListPreference 
+        <ListPreference
             android:key="pref_sb_bt_visibility"
             android:title="@string/pref_sb_bt_visibility_title"
             android:entries="@array/sb_bt_entries"
             android:entryValues="@array/sb_bt_values"
             android:defaultValue="HIDDEN" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_sb_hide_vibrate_icon"
             android:title="@string/pref_sb_hide_vibrate_icon_title"
             android:defaultValue="false" />
-        
-        <CheckBoxPreference 
+
+        <CheckBoxPreference
             android:key="pref_sb_hide_data_saver_icon"
             android:title="@string/pref_sb_hide_data_saver_icon_title"
             android:defaultValue="false" />
@@ -1172,32 +1172,32 @@
             android:title="@string/pref_ongoing_notifications_title"
             android:summary="@string/pref_ongoing_notifications_summary" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_statusbar_brightness"
             android:title="@string/pref_statusbar_brightness_title"
             android:summary="@string/pref_statusbar_brightness_summary"
             android:defaultValue="false" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_statusbar_disable_peek"
             android:title="@string/pref_statusbar_disable_peek_title"
             android:summary="@string/pref_statusbar_disable_peek_summary"
             android:defaultValue="false" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_statusbar_dt2s"
             android:title="@string/pref_statusbar_dt2s_title"
             android:summary="@string/pref_statusbar_dt2s_summary"
             android:defaultValue="false"
             android:dependency="pref_statusbar_disable_peek" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_disable_roaming_indicators"
             android:title="@string/pref_disable_roaming_indicators_title"
             android:summary="@string/pref_disable_roaming_indicators_summary"
             android:defaultValue="false" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_sb_corner_padding_remove"
             android:title="@string/pref_sb_corner_padding_remove_title"
             android:summary="@string/pref_sb_corner_padding_remove_summary"
@@ -1220,13 +1220,13 @@
             android:key="pref_cat_navbar_general"
             android:title="@string/pref_cat_navbar_general_title">
 
-            <SwitchPreference 
+            <SwitchPreference
                 android:key="pref_navbar_override"
                 android:title="@string/pref_masterswitch_title"
                 android:summary="@string/pref_navbar_override_summary"
                 android:defaultValue="false" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_navbar_enable"
                 android:title="@string/pref_navbar_enable_title"
                 android:summary="@string/pref_navbar_enable_summary"
@@ -1238,32 +1238,32 @@
             android:key="pref_cat_navbar_keys"
             android:title="@string/pref_cat_navbar_keys_title">
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_navbar_menukey"
                 android:title="@string/pref_navbar_menukey_title"
                 android:defaultValue="false" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_navbar_hide_ime"
                 android:title="@string/pref_navbar_hide_ime_title"
                 android:defaultValue="false" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_navbar_swap_keys"
                 android:title="@string/pref_navbar_swap_keys_title"
                 android:defaultValue="false" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_navbar_cursor_control"
                 android:title="@string/pref_navbar_cursor_control_title"
                 android:summary="@string/pref_navbar_cursor_control_summary"
                 android:defaultValue="false" />
 
-            <PreferenceScreen 
+            <PreferenceScreen
                 android:key="pref_cat_navbar_custom_key"
                 android:title="@string/pref_cat_navbar_custom_key_title">
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_navbar_custom_key_enable"
                     android:title="@string/pref_navbar_custom_key_enable_title"
                     android:defaultValue="false" />
@@ -1286,13 +1286,13 @@
                     android:defaultValue="0"
                     android:dependency="pref_navbar_custom_key_enable" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_navbar_custom_key_swap"
                     android:title="@string/pref_navbar_custom_key_swap_title"
                     android:defaultValue="false"
                     android:dependency="pref_navbar_custom_key_enable" />
 
-                <ListPreference 
+                <ListPreference
                     android:key="pref_navbar_custom_key_icon_style"
                     android:title="@string/pref_navbar_custom_key_icon_style_title"
                     android:entries="@array/ncki_icon_style_entries"
@@ -1312,20 +1312,20 @@
             android:key="pref_cat_navbar_color"
             android:title="@string/pref_cat_navbar_color_title">
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_navbar_color_enable"
                 android:title="@string/pref_navbar_color_enable_title"
                 android:summary="@string/pref_navbar_color_enable_summary"
                 android:defaultValue="false" />
 
-            <net.margaritov.preference.colorpicker.ColorPickerPreference 
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
                 android:key="pref_navbar_key_color"
                 android:title="@string/pref_navbar_key_color_title"
                 android:defaultValue="@color/navbar_key_color"
                 android:dependency="pref_navbar_color_enable"
                 alphaSlider="false" />
 
-            <net.margaritov.preference.colorpicker.ColorPickerPreference 
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
                 android:key="pref_navbar_key_glow_color"
                 android:title="@string/pref_navbar_key_glow_color_title"
                 android:defaultValue="@color/navbar_key_glow_color"
@@ -1380,21 +1380,21 @@
         android:title="@string/pie_control_title"
         android:summary="@string/pie_control_summary">
 
-        <ListPreference 
+        <ListPreference
             android:key="pref_pie_control_enable2"
             android:title="@string/pie_control_enable_title"
             android:entries="@array/pie_controls_enable_entries"
             android:entryValues="@array/pie_controls_enable_values"
             android:defaultValue="0" />
 
-        <ListPreference 
+        <ListPreference
             android:key="pref_pie_control_custom_key"
             android:title="@string/pref_pie_control_custom_key_title"
             android:entries="@array/pie_custom_key_entries"
             android:entryValues="@array/pie_custom_key_values"
             android:defaultValue="0" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_pie_control_menu"
             android:title="@string/pie_control_menu_title"
             android:defaultValue="false" />
@@ -1406,19 +1406,19 @@
             android:entryValues="@array/pie_control_trigger_position_values"
             android:defaultValue="@array/pie_control_trigger_position_default" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_pie_control_center_trigger"
             android:title="@string/pref_pie_control_center_trigger_title"
             android:summary="@string/pref_pie_control_center_trigger_summary"
             android:defaultValue="false" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_pie_control_trigind"
             android:title="@string/pref_pie_control_trigind_title"
             android:defaultValue="false"
             android:dependency="pref_pie_control_center_trigger" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference 
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="pref_pie_control_trigind_color"
             android:title="@string/pref_pie_control_trigind_color_title"
             android:defaultValue="@color/pie_trigind_color"
@@ -1443,17 +1443,17 @@
                 interval="10"
                 android:defaultValue="1000" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
                 android:key="pref_pie_control_mirrored_keys"
                 android:title="@string/pref_pie_control_mirrored_keys_title"
                 android:defaultValue="false" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
                 android:key="pref_pie_sysinfo_disable"
                 android:title="@string/pref_pie_sysinfo_disable_title"
                 android:defaultValue="false" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
                 android:key="pref_hwkeys_disable"
                 android:title="@string/pref_hwkeys_disable_title"
                 android:summary="@string/pref_hwkeys_disable_summary"
@@ -1506,31 +1506,31 @@
             android:key="pref_cat_pie_colors"
             android:title="@string/pref_cat_pie_colors_title">
 
-            <net.margaritov.preference.colorpicker.ColorPickerPreference 
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
                 android:key="pref_pie_color_bg"
                 android:title="@string/pref_pie_color_bg_title"
                 android:defaultValue="@color/pie_background_color"
                 alphaSlider="true" />
 
-            <net.margaritov.preference.colorpicker.ColorPickerPreference 
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
                 android:key="pref_pie_color_fg"
                 android:title="@string/pref_pie_color_fg_title"
                 android:defaultValue="@color/pie_foreground_color"
                 alphaSlider="false" />
 
-            <net.margaritov.preference.colorpicker.ColorPickerPreference 
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
                 android:key="pref_pie_color_outline"
                 android:title="@string/pref_pie_color_outline_title"
                 android:defaultValue="@color/pie_outline_color"
                 alphaSlider="true" />
 
-            <net.margaritov.preference.colorpicker.ColorPickerPreference 
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
                 android:key="pref_pie_color_selected"
                 android:title="@string/pref_pie_color_selected_title"
                 android:defaultValue="@color/pie_selected_color"
                 alphaSlider="true" />
 
-            <net.margaritov.preference.colorpicker.ColorPickerPreference 
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
                 android:key="pref_pie_color_text"
                 android:title="@string/pref_pie_color_text_title"
                 android:defaultValue="@color/pie_text_color"
@@ -1550,41 +1550,41 @@
         android:title="@string/pref_cat_power_title"
         android:summary="@string/pref_cat_power_summary">
 
-        <PreferenceCategory 
+        <PreferenceCategory
             android:key="pref_cat_power_menu"
             android:title="@string/pref_cat_power_menu_title">
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_powermenu_disable_on_lockscreen"
                 android:title="@string/pref_powermenu_disable_on_lockscreen_title"
                 android:defaultValue="false" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_poweroff_advanced"
                 android:title="@string/poweroff_advanced_title"
                 android:summary="@string/poweroff_advanced_summary"
                 android:defaultValue="false" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_reboot_allow_softreboot"
                 android:title="@string/pref_reboot_allow_softreboot_title"
                 android:summary="@string/pref_reboot_allow_softreboot_summary"
                 android:defaultValue="false"
                 android:dependency="pref_poweroff_advanced" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_reboot_allow_on_lockscreen"
                 android:title="@string/pref_reboot_allow_on_lockscreen_title"
                 android:defaultValue="false"
                 android:dependency="pref_poweroff_advanced" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_reboot_confirm_required"
                 android:title="@string/pref_reboot_confirm_required_title"
                 android:defaultValue="true"
                 android:dependency="pref_poweroff_advanced" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_powermenu_expanded_desktop"
                 android:title="@string/pref_powermenu_expanded_desktop_title"
                 android:summaryOff="@string/pref_powermenu_expanded_desktop_summary"
@@ -1592,7 +1592,7 @@
 
         </PreferenceCategory>
 
-        <PreferenceCategory 
+        <PreferenceCategory
             android:key="pref_cat_power_other"
             android:title="@string/pref_cat_power_other_title">
 
@@ -1612,7 +1612,7 @@
                 android:showSilent="true"
                 android:defaultValue="" />
 
-            <RingtonePreference 
+            <RingtonePreference
                 android:key="pref_charger_plugged_sound2"
                 android:title="@string/pref_charger_plugged_sound_title"
                 android:ringtoneType="notification"
@@ -1629,31 +1629,31 @@
                 android:showSilent="true"
                 android:defaultValue="" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_oos_dash_sound_disable"
                 android:title="@string/pref_oos_dash_sound_disable_title"
                 android:defaultValue="false" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_flashing_led_disable"
                 android:title="@string/pref_flashing_led_disable_title"
                 android:summary="@string/pref_flashing_led_disable_summary"
                 android:defaultValue="false" />
 
-            <ListPreference 
+            <ListPreference
                 android:key="pref_charging_led"
                 android:title="@string/pref_charging_led_title"
                 android:entries="@array/charging_led_entries"
                 android:entryValues="@array/charging_led_values"
                 android:defaultValue="DEFAULT" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_power_proximity_wake"
                 android:title="@string/pref_power_proximity_wake_title"
                 android:summary="@string/pref_power_proximity_wake_summary"
                 android:defaultValue="false" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_power_proximity_wake_ignore_call"
                 android:title="@string/pref_power_proximity_wake_ignore_call_title"
                 android:defaultValue="false"
@@ -1668,7 +1668,7 @@
 
     </PreferenceScreen>
 
-    <PreferenceScreen 
+    <PreferenceScreen
         android:key="pref_cat_display"
         android:title="@string/pref_cat_display_title"
         android:summary="@string/pref_cat_display_summary">
@@ -1684,7 +1684,7 @@
             android:key="pref_cat_brightness"
             android:title="@string/pref_cat_brightness_title">
 
-            <SwitchPreference 
+            <SwitchPreference
                 android:key="pref_brightness_master_switch"
                 android:title=""
                 android:summary="@string/pref_brightness_master_switch_summary"
@@ -1713,20 +1713,20 @@
                 android:dependency="pref_brightness_master_switch" />
 
             <com.ceco.r.gravitybox.preference.AutoBrightnessDialogPreference
-                android:key="pref_autobrightness" 
+                android:key="pref_autobrightness"
                 android:title="@string/pref_ab_title"
                 android:summary="@string/pref_ab_summary"
                 android:dependency="pref_brightness_master_switch" />
 
         </PreferenceScreen>
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_display_allow_all_rotations"
             android:title="@string/pref_display_allow_all_rotations_title"
             android:summary="@string/pref_display_allow_all_rotations_summary"
             android:defaultValue="false" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_unplug_turns_on_screen"
             android:title="@string/pref_unplug_turns_on_screen_title"
             android:summary="@string/pref_unplug_turns_on_screen_summary" />
@@ -1763,7 +1763,7 @@
 
     </PreferenceScreen>
 
-    <PreferenceScreen 
+    <PreferenceScreen
         android:key="pref_cat_phone"
         android:title="@string/pref_cat_phone_title"
         android:summary="@string/pref_cat_phone_summary">
@@ -1780,7 +1780,7 @@
                 android:entryValues="@array/phone_flip_action_values"
                 android:defaultValue="0" />
 
-            <MultiSelectListPreference 
+            <MultiSelectListPreference
                 android:key="pref_call_vibrations"
                 android:title="@string/pref_call_vibrations_title"
                 android:entries="@array/call_vibration_entries"
@@ -1793,7 +1793,7 @@
                 android:dialogTitle="@string/pref_increasing_ring_title"
                 gb:streamType="ring" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_oos_call_recording"
                 android:title="@string/pref_oos_call_recording_title"
                 android:summaryOn="@string/pref_oos_call_recording_summary"
@@ -1801,7 +1801,7 @@
 
         </PreferenceCategory>
 
-        <PreferenceCategory 
+        <PreferenceCategory
             android:key="pref_cat_phone_mobile_data"
             android:title="@string/pref_cat_phone_mobile_data_title">
 
@@ -1829,7 +1829,7 @@
                     android:defaultValue="-1"
                     android:dependency="pref_smart_radio_enable" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_smart_radio_mda_ignore"
                     android:title="@string/pref_smart_radio_mda_ignore_title"
                     android:summary="@string/pref_smart_radio_mda_ignore_summary"
@@ -1844,11 +1844,11 @@
                     maximum="20"
                     interval="1"
                     monitorBoxEnabled="true"
-                    monitorBoxUnit="s" 
+                    monitorBoxUnit="s"
                     android:defaultValue="5"
                     android:dependency="pref_smart_radio_enable" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_smart_radio_screen_off"
                     android:title="@string/pref_smart_radio_screen_off_title"
                     android:summary="@string/pref_smart_radio_screen_off_summary"
@@ -1863,7 +1863,7 @@
                     maximum="30"
                     interval="1"
                     monitorBoxEnabled="true"
-                    monitorBoxUnit="m" 
+                    monitorBoxUnit="m"
                     android:defaultValue="0"
                     android:dependency="pref_smart_radio_screen_off" />
 
@@ -1875,11 +1875,11 @@
                     maximum="100"
                     interval="1"
                     monitorBoxEnabled="true"
-                    monitorBoxUnit="kB/s" 
+                    monitorBoxUnit="kB/s"
                     android:defaultValue="0"
                     android:dependency="pref_smart_radio_screen_off" />
 
-                <CheckBoxPreference 
+                <CheckBoxPreference
                     android:key="pref_smart_radio_ignore_locked"
                     android:title="@string/pref_smart_radio_ignore_locked_title"
                     android:summary="@string/pref_smart_radio_ignore_locked_summary"
@@ -1888,7 +1888,7 @@
 
             </PreferenceScreen>
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_national_roaming"
                 android:title="@string/pref_national_roaming_title"
                 android:summary="@string/pref_national_roaming_summary"
@@ -1898,7 +1898,7 @@
 
     </PreferenceScreen>
 
-    <PreferenceScreen 
+    <PreferenceScreen
         android:key="pref_cat_media"
         android:title="@string/pref_cat_media_title"
         android:summary="@string/pref_cat_media_summary">
@@ -1913,14 +1913,14 @@
                 android:summary="@string/pref_visualizer_enable_summary"
                 android:defaultValue="false" />
 
-            <net.margaritov.preference.colorpicker.ColorPickerPreference 
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
                 android:key="pref_visualizer_color"
                 android:title="@string/pref_visualizer_color_title"
                 android:defaultValue="@integer/COLOR_WHITE"
                 android:dependency="pref_visualizer_enable"
                 alphaSlider="false" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_visualizer_dynamic_color"
                 android:title="@string/pref_visualizer_dynamic_color_title"
                 android:summary="@string/pref_visualizer_dynamic_color_summary"
@@ -1934,25 +1934,25 @@
                 maximum="100"
                 interval="1"
                 monitorBoxEnabled="true"
-                monitorBoxUnit="%" 
+                monitorBoxUnit="%"
                 android:defaultValue="50"
                 android:dependency="pref_visualizer_enable" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_visualizer_navbar"
                 android:title="@string/pref_visualizer_navbar_title"
                 android:summary="@string/pref_visualizer_navbar_summary"
                 android:defaultValue="false"
                 android:dependency="pref_visualizer_enable" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_visualizer_active_mode"
                 android:title="@string/pref_visualizer_active_mode_title"
                 android:summary="@string/pref_visualizer_active_mode_summary"
                 android:defaultValue="false"
                 android:dependency="pref_visualizer_enable" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_visualizer_dim"
                 android:title="@string/pref_visualizer_dim_title"
                 android:summary="@string/pref_visualizer_dim_summary"
@@ -1966,32 +1966,32 @@
                 maximum="100"
                 interval="1"
                 monitorBoxEnabled="true"
-                monitorBoxUnit="%" 
+                monitorBoxUnit="%"
                 android:defaultValue="80"
                 android:dependency="pref_visualizer_dim" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_visualizer_dim_header"
                 android:title="@string/pref_visualizer_dim_header_title"
                 android:summary="@string/pref_visualizer_dim_header_summary"
                 android:defaultValue="true"
                 android:dependency="pref_visualizer_dim" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_visualizer_dim_info"
                 android:title="@string/pref_visualizer_dim_info_title"
                 android:summary="@string/pref_visualizer_dim_info_summary"
                 android:defaultValue="true"
                 android:dependency="pref_visualizer_dim" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_visualizer_dim_controls"
                 android:title="@string/pref_visualizer_dim_controls_title"
                 android:summary="@string/pref_visualizer_dim_controls_summary"
                 android:defaultValue="true"
                 android:dependency="pref_visualizer_dim" />
 
-            <CheckBoxPreference 
+            <CheckBoxPreference
                 android:key="pref_visualizer_dim_artwork"
                 android:title="@string/pref_visualizer_dim_artwork_title"
                 android:summary="@string/pref_visualizer_dim_artwork_summary"
@@ -2000,13 +2000,13 @@
 
         </PreferenceScreen>
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_vol_music_controls"
             android:title="@string/vol_music_controls_title"
             android:summary="@string/vol_music_controls_summary"
             android:defaultValue="false" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_music_volume_steps"
             android:title="@string/pref_music_volume_steps_title"
             android:summary="@string/pref_music_volume_steps_summary"
@@ -2018,17 +2018,17 @@
             maximum="50"
             interval="1"
             monitorBoxEnabled="true"
-            monitorBoxUnit="" 
+            monitorBoxUnit=""
             android:defaultValue="30"
             android:dependency="pref_music_volume_steps" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_vol_force_ring_control"
             android:title="@string/pref_vol_force_ring_control_title"
             android:summary="@string/pref_vol_force_ring_control_summary"
             android:defaultValue="false" />
 
-        <ListPreference 
+        <ListPreference
             android:key="pref_safe_media_volume2"
             android:title="@string/pref_safe_media_volume_title"
             android:summary="@string/pref_safe_media_volume_summary"
@@ -2084,7 +2084,7 @@
 
     </PreferenceScreen>
 
-    <PreferenceScreen 
+    <PreferenceScreen
         android:key="pref_cat_hwkey_actions"
         android:title="@string/pref_cat_hwkey_actions_title"
         android:summary="@string/pref_cat_hwkey_actions_summary">
@@ -2123,7 +2123,7 @@
                 android:dialogTitle="@string/hwkey_home_longpress_dialog_title"
                 android:defaultValue="0"/>
 
-            <!-- 
+            <!--
             <CheckBoxPreference
                 android:key="pref_hwkey_home_longpress_keyguard"
                 android:title="@string/pref_hwkey_home_longpress_keyguard_title"
@@ -2246,7 +2246,7 @@
                 android:entryValues="@array/hwkey_kill_delay_values"
                 android:defaultValue="1000" />
 
-            <!-- 
+            <!--
             <EditTextPreference
                 android:key="pref_virtual_key_vibrate_pattern"
                 android:title="@string/pref_virtual_key_vibrate_pattern_title"
@@ -2257,7 +2257,7 @@
 
     </PreferenceScreen>
 
-    <PreferenceScreen 
+    <PreferenceScreen
         android:key="pref_cat_app_launcher"
         android:title="@string/pref_cat_app_launcher_title"
         android:summary="@string/pref_cat_app_launcher_summary">
@@ -2284,14 +2284,14 @@
             android:summary="@string/pref_fingerprint_launcher_enable_summary"
             android:defaultValue="false" />
 
-        <Preference 
+        <Preference
             android:key="pref_fingerprint_launcher_pause"
             android:title="@string/pref_fingerprint_launcher_pause_title"
             android:summary="@string/pref_fingerprint_launcher_pause_summary"
             android:persistent="false"
             android:dependency="pref_fingerprint_launcher_enable" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_fingerprint_launcher_show_toast"
             android:title="@string/pref_fingerprint_launcher_show_toast_title"
             android:summary="@string/pref_fingerprint_launcher_show_toast_summary"
@@ -2328,7 +2328,7 @@
         android:title="@string/pref_cat_screenrecord_options_title"
         android:summary="@string/pref_cat_screenrecord_options_summary">
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_screenrecord_use_stock"
             android:title="@string/pref_screenrecord_use_stock_title"
             android:summary="@string/pref_screenrecord_use_stock_summary"
@@ -2350,7 +2350,7 @@
             maximum="20"
             interval="1"
             monitorBoxEnabled="true"
-            monitorBoxUnit="MBps" 
+            monitorBoxUnit="MBps"
             android:defaultValue="4" />
 
         <com.ceco.r.gravitybox.preference.SeekBarPreference
@@ -2360,18 +2360,18 @@
             maximum="60"
             interval="1"
             monitorBoxEnabled="true"
-            monitorBoxUnit="m" 
+            monitorBoxUnit="m"
             android:defaultValue="3"
             android:dependency="pref_screenrecord_use_stock" />
 
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_screenrecord_rotate"
             android:title="@string/pref_screenrecord_rotate_title"
             android:summary="@string/pref_screenrecord_rotate_summary"
             android:defaultValue="false" />
 
         <!--
-        <CheckBoxPreference 
+        <CheckBoxPreference
             android:key="pref_screenrecord_microphone"
             android:title="@string/pref_screenrecord_microphone_title"
             android:summary="@string/pref_screenrecord_microphone_summary"
@@ -2381,7 +2381,7 @@
 
     </PreferenceScreen>
 
-    <PreferenceScreen 
+    <PreferenceScreen
         android:key="pref_cat_misc"
         android:title="@string/pref_cat_misc_title"
         android:summary="@string/pref_cat_misc_summary">
@@ -2451,7 +2451,7 @@
 
     </PreferenceScreen>
 
-    <Preference 
+    <Preference
         android:key="pref_led_control"
         android:title="@string/pref_led_control_title"
         android:summary="@string/pref_led_control_summary" />
@@ -2464,45 +2464,35 @@
     <Preference
         android:key="pref_engineering_mode"
         android:title="@string/engineering_mode_title"
-        android:summary="@string/engineering_mode_summary" />"
+        android:summary="@string/engineering_mode_summary" />
 
-    <PreferenceScreen 
+    <PreferenceScreen
         android:key="pref_cat_about"
         android:title="@string/pref_cat_about_title">
 
         <Preference
-            android:key="pref_about_gb" 
+            android:key="pref_about_gb"
             android:summary="@string/about_gb_summary" />
 
         <Preference
             android:key="pref_about_xposed"
             android:title="@string/about_xposed_title"
-            android:summary="@string/about_xposed_summary" />"
+            android:summary="@string/about_xposed_summary" />
 
         <Preference
             android:key="pref_about_edxposed"
             android:title="@string/about_edxposed_title"
-            android:summary="@string/about_edxposed_summary" />"
+            android:summary="@string/about_edxposed_summary" />
 
         <Preference
             android:key="pref_about_riru"
             android:title="@string/about_riru_title"
-            android:summary="@string/about_riru_summary" />"
-
-        <Preference
-            android:key="pref_about_donate"
-            android:title="@string/about_donate_title"
-            android:summary="@string/about_donate_summary" />
+            android:summary="@string/about_riru_summary" />
 
         <EditTextPreference
             android:key="pref_trans_verification"
             android:title="@string/pref_trans_verification_title"
             android:summary="@string/pref_trans_verification_summary" />
-
-        <Preference
-            android:key="pref_about_get_unlocker"
-            android:title="@string/pref_about_get_unlocker_title"
-            android:summary="@string/pref_about_get_unlocker_summary" />
 
         <CheckBoxPreference
             android:key="pref_gb_theme_dark"
